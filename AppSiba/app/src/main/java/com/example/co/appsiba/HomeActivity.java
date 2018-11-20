@@ -8,10 +8,11 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.view.MenuItem;
 
-import com.example.co.appsiba.fragment.favoritesFragment;
-import com.example.co.appsiba.fragment.memoFragment;
-import com.example.co.appsiba.fragment.refriFragment;
-import com.example.co.appsiba.fragment.resultFragment;
+import com.example.co.appsiba.fragment.FavoritesFragment;
+import com.example.co.appsiba.fragment.MemoFragment;
+import com.example.co.appsiba.fragment.MyrefriFragment;
+import com.example.co.appsiba.fragment.RefriFragment;
+import com.example.co.appsiba.fragment.ResultFragment;
 
 public class HomeActivity extends AppCompatActivity {
 
@@ -30,7 +31,7 @@ public class HomeActivity extends AppCompatActivity {
 //        layoutParams.setBehavior(new BottomNavigationBehavior());
 
         // load the store fragment by default
-        loadFragment(new refriFragment());
+        loadFragment(new RefriFragment());
     }
 
     private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
@@ -40,20 +41,20 @@ public class HomeActivity extends AppCompatActivity {
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             Fragment fragment;
             switch (item.getItemId()) {
-                case R.id.navigation_shop:
-                    fragment = new refriFragment();
+                case R.id.navigation_myRefri:
+                    fragment = new MyrefriFragment();
                     loadFragment(fragment);
                     return true;
-                case R.id.navigation_gifts:
-                    fragment = new resultFragment();
+                case R.id.navigation_menuRecommand:
+                    fragment = new ResultFragment();
                     loadFragment(fragment);
                     return true;
-                case R.id.navigation_cart:
-                    fragment = new memoFragment();
+                case R.id.navigation_memo:
+                    fragment = new MemoFragment();
                     loadFragment(fragment);
                     return true;
-                case R.id.navigation_profile:
-                    fragment = new favoritesFragment();
+                case R.id.navigation_favorites:
+                    fragment = new FavoritesFragment();
                     loadFragment(fragment);
                     return true;
             }

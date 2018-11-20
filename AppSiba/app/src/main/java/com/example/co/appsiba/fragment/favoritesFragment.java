@@ -8,14 +8,14 @@ import android.view.ViewGroup;
 
 import com.example.co.appsiba.R;
 
-public class favoritesFragment extends Fragment {
+public class FavoritesFragment extends Fragment {
 
-    public favoritesFragment() {
+    public FavoritesFragment() {
         // Required empty public constructor
     }
 
-    public static favoritesFragment newInstance(String param1, String param2) {
-        favoritesFragment fragment = new favoritesFragment();
+    public static FavoritesFragment newInstance(String param1, String param2) {
+        FavoritesFragment fragment = new FavoritesFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;

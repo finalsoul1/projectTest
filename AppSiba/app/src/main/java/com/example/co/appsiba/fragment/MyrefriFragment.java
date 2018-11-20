@@ -8,13 +8,14 @@ import android.view.ViewGroup;
 
 import com.example.co.appsiba.R;
 
-public class RefriFragment extends Fragment {
+public class MyrefriFragment extends Fragment {
 
-    public RefriFragment() {
+    public MyrefriFragment() {
+        // Required empty public constructor
     }
 
-    public static RefriFragment newInstance(String param1, String param2) {
-        RefriFragment fragment = new RefriFragment();
+    public static MyrefriFragment newInstance(String param1, String param2) {
+        MyrefriFragment fragment = new MyrefriFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
@@ -29,6 +30,6 @@ public class RefriFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_refri, container, false);
+        return inflater.inflate(R.layout.fragment_myrefri, container, false);
     }
 }

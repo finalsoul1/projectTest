@@ -8,14 +8,14 @@ import android.view.ViewGroup;
 
 import com.example.co.appsiba.R;
 
-public class memoFragment extends Fragment {
+public class MemoFragment extends Fragment {
 
-    public memoFragment() {
+    public MemoFragment() {
         // Required empty public constructor
     }
 
-    public static memoFragment newInstance(String param1, String param2) {
-        memoFragment fragment = new memoFragment();
+    public static MemoFragment newInstance(String param1, String param2) {
+        MemoFragment fragment = new MemoFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;

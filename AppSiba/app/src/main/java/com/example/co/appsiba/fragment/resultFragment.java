@@ -8,13 +8,13 @@ import android.view.ViewGroup;
 
 import com.example.co.appsiba.R;
 
-public class resultFragment extends Fragment {
+public class ResultFragment extends Fragment {
 
-    public resultFragment() {
+    public ResultFragment() {
     }
 
-    public static resultFragment newInstance(String param1, String param2) {
-        resultFragment fragment = new resultFragment();
+    public static ResultFragment newInstance(String param1, String param2) {
+        ResultFragment fragment = new ResultFragment();
         Bundle args = new Bundle();
         fragment.setArguments(args);
         return fragment;
